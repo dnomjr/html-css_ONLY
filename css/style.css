@@ -1,0 +1,145 @@
+.attribution {
+  font-size: 0.6875rem;
+  margin-top: 8rem;
+  width: 6.25rem;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+body {
+  width: 100%; /* 1536 */
+  margin: 0 auto;
+  min-height: 100vh;
+  font-size: 100%;
+  background-color: hsl(30, 38%, 92%);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  /* align-content: center; */
+}
+
+.product_card {
+  width: 37.5rem;
+  height: 28.125rem;
+  display: flex;
+  flex-direction: row;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  margin-top: 3.125rem;
+}
+
+main {
+  background-color: hsl(0, 0%, 100%);
+  padding: 1.25rem 1.875rem 1.25rem 1.875rem;
+}
+
+aside {
+  width: 18.75rem;
+  height: 28.125rem;
+  flex-shrink: 0;
+}
+
+h1 {
+  font-family: "Fraunces", serif;
+  color: hsl(212, 21%, 14%);
+}
+
+h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: hsl(228, 12%, 48%);
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+}
+
+.description {
+  color: hsl(228, 12%, 48%);
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.875rem;
+  line-height: 1.375rem;
+}
+
+.prices {
+  margin-top: 2.1875rem;
+}
+
+.actual_price {
+  font-family: "Fraunces", serif;
+  color: hsl(158, 36%, 37%);
+  font-size: 1.875rem;
+}
+
+.old_price {
+  font-size: 0.875rem;
+  text-decoration: line-through;
+  color: hsl(228, 12%, 48%);
+  margin-bottom: 1.25rem;
+  position: relative;
+  bottom: 0.3125rem;
+  left: 0.625rem;
+}
+
+.cart {
+  width: 15rem;
+  margin-top: 1.5625rem;
+  padding: 0.9375rem 0;
+  text-align: center;
+  background-color: hsl(158, 36%, 37%);
+  color: hsl(0, 0%, 100%);
+  border-radius: 0.3125rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 0.875rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cart:hover,
+.cart:active {
+  cursor: pointer;
+  background-color: hsl(156, 42%, 18%);
+}
+
+.icon {
+  margin-right: 0.625rem;
+}
+
+.product_image {
+  width: 100%;
+  height: auto;
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 620px) {
+  body {
+  }
+
+  .product_card {
+    width: 21.25rem;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  image {
+  }
+
+  aside {
+    width: 100%;
+    height: 15rem;
+    overflow: hidden;
+  }
+
+  .product_image {
+    position: relative;
+    bottom: 7.8125rem;
+  }
+}
